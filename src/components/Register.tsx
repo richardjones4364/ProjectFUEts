@@ -1,4 +1,4 @@
-import { Container, Table, Form } from 'react-bootstrap';
+import { Container, Table, Form, Button } from 'react-bootstrap';
 
 function Register() {
   return (
@@ -17,7 +17,7 @@ function Register() {
             <td>
               <Form.Check type="checkbox" />
             </td>
-            <td>Mark</td>
+            <td>Dave</td>
             <td>Otto</td>
             <td>9TH</td>
           </tr>
@@ -33,12 +33,13 @@ function Register() {
             <td>
               <Form.Check type="checkbox" />
             </td>
-            <td>Larry</td>
+            <td>Harry</td>
             <td>Piles</td>
             <td>7GG</td>
           </tr>
         </tbody>
       </Table>
+      <Button>Save</Button>
     </Container>
   );
 }

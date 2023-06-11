@@ -1,28 +1,21 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import Welcome from './pages/Welcome';
+import RegisterPage from './pages/RegisterPage';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+const App: React.FC = () => {
   return (
-    <>
-      <div>
-          <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLOHqh3XatTe205mB3ODQzVipZWmv-GIPhBw&usqp=CAU' />
-      </div>
-      <h1>Welcome to Project FUE</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          {count} fucks given
-        </button>
-        
-      </div>
-      <p className="read-the-docs">
-        Made In Cornwall
-      </p>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginPage />} />
+        <Route path="/Welcome" element={<Welcome />} />
+        <Route path="/RegisterPage" element={<RegisterPage />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
+
+

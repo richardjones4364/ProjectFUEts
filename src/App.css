@@ -13,4 +13,20 @@
   color: red;
 }
 
+.check-cell.selected {
+  background-color: lightgreen;
+}
+
+.cross-cell.selected {
+  background-color: lightcoral;
+}
+
+.check-icon.text-success {
+  color: green;
+}
+
+.cross-icon.text-danger {
+  color: red;
+}
+
 
